@@ -7,8 +7,8 @@ const Header: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 items-center justify-between">
+    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/95 shadow-sm">
+      <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center space-x-2">
           <button 
             onClick={() => navigate('/')}
