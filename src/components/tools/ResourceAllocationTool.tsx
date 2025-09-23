@@ -25,7 +25,7 @@ interface Assignment {
   endDate: string;
 }
 
-export const ResourceAllocationTool: React.FC = () => {
+const ResourceAllocationTool: React.FC = () => {
   const [resources, setResources] = useState<Resource[]>([
     {
       id: '1',

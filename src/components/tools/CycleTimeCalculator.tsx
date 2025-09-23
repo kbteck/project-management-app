@@ -17,7 +17,7 @@ interface Task {
   priority: 'low' | 'medium' | 'high';
 }
 
-export const CycleTimeCalculator: React.FC = () => {
+const CycleTimeCalculator: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([
     {
       id: '1',

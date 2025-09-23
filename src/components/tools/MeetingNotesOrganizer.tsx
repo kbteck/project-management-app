@@ -19,7 +19,7 @@ interface MeetingNote {
   actionItems: string[];
 }
 
-export const MeetingNotesOrganizer: React.FC = () => {
+const MeetingNotesOrganizer: React.FC = () => {
   const [notes, setNotes] = useState<MeetingNote[]>([
     {
       id: '1',

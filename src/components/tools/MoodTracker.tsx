@@ -32,7 +32,7 @@ const moodLabels = {
   5: 'Excellent'
 };
 
-export const MoodTracker: React.FC = () => {
+const MoodTracker: React.FC = () => {
   const [entries, setEntries] = useState<MoodEntry[]>([
     {
       id: '1',

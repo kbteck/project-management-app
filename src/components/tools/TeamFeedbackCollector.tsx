@@ -22,7 +22,7 @@ interface Feedback {
   dislikes: number;
 }
 
-export const TeamFeedbackCollector: React.FC = () => {
+const TeamFeedbackCollector: React.FC = () => {
   const [feedbacks, setFeedbacks] = useState<Feedback[]>([
     {
       id: '1',

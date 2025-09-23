@@ -20,7 +20,7 @@ interface Person {
   name: string;
 }
 
-export const RACIMatrixBuilder: React.FC = () => {
+const RACIMatrixBuilder: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([
     { id: '1', name: 'Requirements Gathering' },
     { id: '2', name: 'Design Review' },

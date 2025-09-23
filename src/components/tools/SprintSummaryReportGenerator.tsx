@@ -25,7 +25,7 @@ interface SprintHighlight {
   description: string;
 }
 
-export const SprintSummaryReportGenerator: React.FC = () => {
+const SprintSummaryReportGenerator: React.FC = () => {
   const [metrics, setMetrics] = useState<SprintMetrics>({
     sprintName: 'Sprint 5',
     startDate: '2024-01-15',

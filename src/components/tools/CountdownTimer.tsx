@@ -5,7 +5,7 @@ import { Input } from '../ui/input';
 import { Label } from '../ui/label';
 import { Play, Pause, Square, RotateCcw } from 'lucide-react';
 
-export const CountdownTimer: React.FC = () => {
+const CountdownTimer: React.FC = () => {
   const [minutes, setMinutes] = useState(25);
   const [seconds, setSeconds] = useState(0);
   const [timeLeft, setTimeLeft] = useState(0);

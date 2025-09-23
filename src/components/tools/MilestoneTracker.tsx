@@ -15,7 +15,7 @@ interface Milestone {
   assignee: string;
 }
 
-export const MilestoneTracker: React.FC = () => {
+const MilestoneTracker: React.FC = () => {
   const [milestones, setMilestones] = useState<Milestone[]>([
     {
       id: '1',

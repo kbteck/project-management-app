@@ -20,7 +20,7 @@ interface ProjectCharter {
   risks: string;
 }
 
-export const ProjectCharterGenerator: React.FC = () => {
+const ProjectCharterGenerator: React.FC = () => {
   const [charter, setCharter] = useState<ProjectCharter>({
     projectName: '',
     projectManager: '',
