@@ -154,3 +154,5 @@ export const WorkBreakdownStructure: React.FC = () => {
     </div>
   );
 };
+
+export default WorkBreakdownStructure;

@@ -285,3 +285,5 @@ export const VelocityTracker: React.FC = () => {
     </div>
   );
 };
+
+export default VelocityTracker;

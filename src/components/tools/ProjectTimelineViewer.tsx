@@ -118,3 +118,5 @@ export const ProjectTimelineViewer: React.FC = () => {
     </div>
   );
 };
+
+export default ProjectTimelineViewer;

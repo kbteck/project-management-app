@@ -5,13 +5,13 @@ import { toolCategories } from '@/data/toolsData';
 import ErrorBoundary from './ErrorBoundary';
 import LoadingSpinner from './LoadingSpinner';
 
-// Lazy load tool components for better performance
-const ProjectTimelineViewer = React.lazy(() => import('./tools/ProjectTimelineViewer').then(module => ({ default: module.ProjectTimelineViewer })));
-const WorkBreakdownStructure = React.lazy(() => import('./tools/WorkBreakdownStructure').then(module => ({ default: module.WorkBreakdownStructure })));
-const ProjectCharterGenerator = React.lazy(() => import('./tools/ProjectCharterGenerator').then(module => ({ default: module.ProjectCharterGenerator })));
-const MilestoneTracker = React.lazy(() => import('./tools/MilestoneTracker').then(module => ({ default: module.MilestoneTracker })));
-const ResourceAllocationTool = React.lazy(() => import('./tools/ResourceAllocationTool').then(module => ({ default: module.ResourceAllocationTool })));
-const RACIMatrixBuilder = React.lazy(() => import('./tools/RACIMatrixBuilder').then(module => ({ default: module.RACIMatrixBuilder })));
+// Lazy load tool components - simplified imports
+const ProjectTimelineViewer = React.lazy(() => import('./tools/ProjectTimelineViewer'));
+const WorkBreakdownStructure = React.lazy(() => import('./tools/WorkBreakdownStructure'));
+const ProjectCharterGenerator = React.lazy(() => import('./tools/ProjectCharterGenerator'));
+const MilestoneTracker = React.lazy(() => import('./tools/MilestoneTracker'));
+const ResourceAllocationTool = React.lazy(() => import('./tools/ResourceAllocationTool'));
+const RACIMatrixBuilder = React.lazy(() => import('./tools/RACIMatrixBuilder'));
 const KanbanBoard = React.lazy(() => import('./tools/KanbanBoard'));
 const ScrumSprintBoard = React.lazy(() => import('./tools/ScrumSprintBoard'));
 const SprintPlanningAssistant = React.lazy(() => import('./tools/SprintPlanningAssistant'));
@@ -30,14 +30,14 @@ const AcceptanceCriteriaGenerator = React.lazy(() => import('./tools/AcceptanceC
 const SprintGoalWriter = React.lazy(() => import('./tools/SprintGoalWriter'));
 const ReleaseNotesGenerator = React.lazy(() => import('./tools/ReleaseNotesGenerator'));
 const PomodoroTimer = React.lazy(() => import('./tools/PomodoroTimer'));
-const CountdownTimer = React.lazy(() => import('./tools/CountdownTimer').then(module => ({ default: module.CountdownTimer })));
-const BurndownChart = React.lazy(() => import('./tools/BurndownChart').then(module => ({ default: module.BurndownChart })));
-const VelocityTracker = React.lazy(() => import('./tools/VelocityTracker').then(module => ({ default: module.VelocityTracker })));
-const CycleTimeCalculator = React.lazy(() => import('./tools/CycleTimeCalculator').then(module => ({ default: module.CycleTimeCalculator })));
-const MeetingNotesOrganizer = React.lazy(() => import('./tools/MeetingNotesOrganizer').then(module => ({ default: module.MeetingNotesOrganizer })));
-const TeamFeedbackCollector = React.lazy(() => import('./tools/TeamFeedbackCollector').then(module => ({ default: module.TeamFeedbackCollector })));
-const MoodTracker = React.lazy(() => import('./tools/MoodTracker').then(module => ({ default: module.MoodTracker })));
-const SprintSummaryReportGenerator = React.lazy(() => import('./tools/SprintSummaryReportGenerator').then(module => ({ default: module.SprintSummaryReportGenerator })));
+const CountdownTimer = React.lazy(() => import('./tools/CountdownTimer'));
+const BurndownChart = React.lazy(() => import('./tools/BurndownChart'));
+const VelocityTracker = React.lazy(() => import('./tools/VelocityTracker'));
+const CycleTimeCalculator = React.lazy(() => import('./tools/CycleTimeCalculator'));
+const MeetingNotesOrganizer = React.lazy(() => import('./tools/MeetingNotesOrganizer'));
+const TeamFeedbackCollector = React.lazy(() => import('./tools/TeamFeedbackCollector'));
+const MoodTracker = React.lazy(() => import('./tools/MoodTracker'));
+const SprintSummaryReportGenerator = React.lazy(() => import('./tools/SprintSummaryReportGenerator'));
 const TeamPerformanceDashboard = React.lazy(() => import('./tools/TeamPerformanceDashboard'));
 const RiskRegisterTool = React.lazy(() => import('./tools/RiskRegisterTool'));
 const TaskTimer = React.lazy(() => import('./tools/TaskTimer'));
