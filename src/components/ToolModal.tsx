@@ -30,7 +30,7 @@ const AcceptanceCriteriaGenerator = React.lazy(() => import('./tools/AcceptanceC
 const SprintGoalWriter = React.lazy(() => import('./tools/SprintGoalWriter'));
 const ReleaseNotesGenerator = React.lazy(() => import('./tools/ReleaseNotesGenerator'));
 const PomodoroTimer = React.lazy(() => import('./tools/PomodoroTimer'));
-const CountdownTimer = React.lazy(() => import('./tools/CountdownTimer'));
+const CountdownTimer = React.lazy(() => import('./tools/CountdownTimerTest'));
 const BurndownChart = React.lazy(() => import('./tools/BurndownChart'));
 const VelocityTracker = React.lazy(() => import('./tools/VelocityTracker'));
 const CycleTimeCalculator = React.lazy(() => import('./tools/CycleTimeCalculator'));
