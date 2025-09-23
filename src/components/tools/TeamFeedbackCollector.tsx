@@ -68,8 +68,8 @@ const TeamFeedbackCollector: React.FC = () => {
         id: Date.now().toString(),
         title: newFeedback.title,
         content: newFeedback.content,
-        category: newFeedback.category as 'positive' | 'negative' | 'suggestion',
-        type: newFeedback.type as 'public' | 'anonymous',
+        category: newFeedback.category as 'team' | 'process' | 'tools' | 'communication' | 'other',
+        type: newFeedback.type as 'positive' | 'negative' | 'suggestion',
         author: newFeedback.isAnonymous ? 'Anonymous' : (newFeedback.author || 'Anonymous'),
         isAnonymous: newFeedback.isAnonymous || false,
         timestamp: new Date().toISOString(),
@@ -168,7 +168,7 @@ const TeamFeedbackCollector: React.FC = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="feedback-category">Category</Label>
-                  <Select value={newFeedback.category} onValueChange={(value) => setNewFeedback({...newFeedback, category: value as 'positive' | 'negative' | 'suggestion'})}>
+                  <Select value={newFeedback.category} onValueChange={(value) => setNewFeedback({...newFeedback, category: value as 'team' | 'process' | 'tools' | 'communication' | 'other'})}>
                     <SelectTrigger>
                       <SelectValue />
                     </SelectTrigger>
@@ -183,7 +183,7 @@ const TeamFeedbackCollector: React.FC = () => {
                 </div>
                 <div>
                   <Label htmlFor="feedback-type">Type</Label>
-                  <Select value={newFeedback.type} onValueChange={(value) => setNewFeedback({...newFeedback, type: value as 'public' | 'anonymous'})}>
+                  <Select value={newFeedback.type} onValueChange={(value) => setNewFeedback({...newFeedback, type: value as 'positive' | 'negative' | 'suggestion'})}>
                     <SelectTrigger>
                       <SelectValue />
                     </SelectTrigger>
