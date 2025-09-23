@@ -177,7 +177,7 @@ const RACIMatrixBuilder: React.FC = () => {
                       <td key={person.id} className="border p-1 text-center">
                         <select
                           value={getRACIRole(task.id, person.id)}
-                          onChange={(e) => updateRACIRole(task.id, person.id, e.target.value as any)}
+                          onChange={(e) => updateRACIRole(task.id, person.id, e.target.value as 'R' | 'A' | 'C' | 'I' | '')}
                           className={`w-full p-1 rounded text-center font-bold ${getRoleColor(getRACIRole(task.id, person.id))}`}
                         >
                           <option value="">-</option>

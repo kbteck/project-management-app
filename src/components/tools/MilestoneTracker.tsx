@@ -50,7 +50,7 @@ const MilestoneTracker: React.FC = () => {
     title: '',
     description: '',
     dueDate: '',
-    priority: 'medium' as const,
+    priority: 'medium' as 'low' | 'medium' | 'high',
     assignee: ''
   });
 

@@ -53,7 +53,7 @@ const MeetingNotesOrganizer: React.FC = () => {
         id: Date.now().toString(),
         title: newNote.title,
         date: newNote.date,
-        type: newNote.type as any,
+        type: newNote.type as 'general' | 'action' | 'decision' | 'follow-up',
         project: newNote.project || '',
         attendees: newNote.attendees || [],
         notes: newNote.notes,
@@ -147,7 +147,7 @@ const MeetingNotesOrganizer: React.FC = () => {
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <Label htmlFor="meeting-type">Meeting Type</Label>
-                  <Select value={newNote.type} onValueChange={(value) => setNewNote({...newNote, type: value as any})}>
+                  <Select value={newNote.type} onValueChange={(value) => setNewNote({...newNote, type: value as 'general' | 'action' | 'decision' | 'follow-up'})}>
                     <SelectTrigger>
                       <SelectValue />
                     </SelectTrigger>

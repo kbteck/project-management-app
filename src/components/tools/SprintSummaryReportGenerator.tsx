@@ -68,7 +68,7 @@ const SprintSummaryReportGenerator: React.FC = () => {
     if (newHighlight.description && newHighlight.type) {
       const highlight: SprintHighlight = {
         id: Date.now().toString(),
-        type: newHighlight.type as any,
+        type: newHighlight.type as 'achievement' | 'challenge' | 'insight',
         description: newHighlight.description
       };
       setHighlights([...highlights, highlight]);
@@ -280,7 +280,7 @@ Generated on: ${new Date().toLocaleDateString()}
               <div className="flex gap-2">
                 <select
                   value={newHighlight.type}
-                  onChange={(e) => setNewHighlight({...newHighlight, type: e.target.value as any})}
+                  onChange={(e) => setNewHighlight({...newHighlight, type: e.target.value as 'achievement' | 'challenge' | 'insight'})}
                   className="px-3 py-2 border rounded"
                 >
                   <option value="achievement">Achievement</option>

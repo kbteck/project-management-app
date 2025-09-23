@@ -73,7 +73,7 @@ const MoodTracker: React.FC = () => {
       const entry: MoodEntry = {
         id: Date.now().toString(),
         date: newEntry.date,
-        mood: newEntry.mood as any,
+        mood: newEntry.mood as 1 | 2 | 3 | 4 | 5,
         teamMember: newEntry.isAnonymous ? 'Anonymous' : (newEntry.teamMember || 'Anonymous'),
         comment: newEntry.comment || '',
         isAnonymous: newEntry.isAnonymous || false
@@ -233,7 +233,7 @@ const MoodTracker: React.FC = () => {
                   {[1, 2, 3, 4, 5].map(mood => (
                     <Button
                       key={mood}
-                      onClick={() => setNewEntry({...newEntry, mood: mood as any})}
+                      onClick={() => setNewEntry({...newEntry, mood: mood as 1 | 2 | 3 | 4 | 5})}
                       variant={newEntry.mood === mood ? 'default' : 'outline'}
                       className="flex-1 h-16 flex-col gap-1"
                     >

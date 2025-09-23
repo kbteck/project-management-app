@@ -176,7 +176,7 @@ const CycleTimeCalculator: React.FC = () => {
                 </div>
                 <div>
                   <Label htmlFor="priority">Priority</Label>
-                  <Select value={newTask.priority} onValueChange={(value) => setNewTask({...newTask, priority: value as any})}>
+                  <Select value={newTask.priority} onValueChange={(value) => setNewTask({...newTask, priority: value as 'low' | 'medium' | 'high'})}>
                     <SelectTrigger>
                       <SelectValue />
                     </SelectTrigger>
