@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useIsMobile } from '@/hooks/use-mobile';
 import Header from './Header';
+import Footer from './Footer';
 import ToolCategory from './ToolCategory';
 import ToolModal from './ToolModal';
 import { toolCategories } from '@/data/toolsData';
@@ -24,11 +25,11 @@ const AppLayout: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background flex flex-col">
       <Header />
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 flex-1">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-center mb-2">Agile & Project Management Tools</h1>
+          <h1 className="text-3xl font-bold text-center mb-2">Agile Project Management Tool</h1>
           <p className="text-muted-foreground text-center">
             Professional toolkit for agile teams and project managers
           </p>
@@ -46,6 +47,7 @@ const AppLayout: React.FC = () => {
           ))}
         </div>
       </main>
+      <Footer />
 
       {selectedTool && (
         <ToolModal
