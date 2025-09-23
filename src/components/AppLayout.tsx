@@ -30,7 +30,7 @@ const AppLayout: React.FC = () => {
       <Header />
       <main className="container mx-auto px-4 py-8 flex-1">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-center mb-2">ILLOX Project Management Tools</h1>
+          <h1 className="text-3xl font-bold text-center mb-2">Agile Project Management Tools</h1>
           <p className="text-muted-foreground text-center">
             Professional toolkit for agile teams and project managers - Free your workflow
           </p>
