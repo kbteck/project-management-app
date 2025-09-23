@@ -128,3 +128,5 @@ export const CountdownTimer: React.FC = () => {
     </div>
   );
 };
+
+export default CountdownTimer;

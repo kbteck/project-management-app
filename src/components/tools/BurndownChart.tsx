@@ -207,3 +207,4 @@ export const BurndownChart: React.FC = () => {
 };
 
 export default BurndownChart;
+export default BurndownChart;

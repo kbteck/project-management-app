@@ -336,3 +336,5 @@ export const TeamFeedbackCollector: React.FC = () => {
     </div>
   );
 };
+
+export default TeamFeedbackCollector;

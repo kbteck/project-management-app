@@ -333,3 +333,5 @@ export const MeetingNotesOrganizer: React.FC = () => {
     </div>
   );
 };
+
+export default MeetingNotesOrganizer;

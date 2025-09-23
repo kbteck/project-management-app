@@ -184,3 +184,5 @@ export const MilestoneTracker: React.FC = () => {
     </div>
   );
 };
+
+export default MilestoneTracker;

@@ -195,3 +195,5 @@ ${charter.risks}
     </div>
   );
 };
+
+export default ProjectCharterGenerator;

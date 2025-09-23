@@ -356,3 +356,5 @@ Generated on: ${new Date().toLocaleDateString()}
     </div>
   );
 };
+
+export default SprintSummaryReportGenerator;

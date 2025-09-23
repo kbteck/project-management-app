@@ -309,3 +309,5 @@ export const MoodTracker: React.FC = () => {
     </div>
   );
 };
+
+export default MoodTracker;

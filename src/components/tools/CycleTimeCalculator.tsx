@@ -270,3 +270,5 @@ export const CycleTimeCalculator: React.FC = () => {
     </div>
   );
 };
+
+export default CycleTimeCalculator;

@@ -198,3 +198,5 @@ export const RACIMatrixBuilder: React.FC = () => {
     </div>
   );
 };
+
+export default RACIMatrixBuilder;

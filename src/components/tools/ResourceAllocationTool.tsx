@@ -207,3 +207,5 @@ export const ResourceAllocationTool: React.FC = () => {
     </div>
   );
 };
+
+export default ResourceAllocationTool;
