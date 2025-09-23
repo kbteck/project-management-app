@@ -31,7 +31,7 @@
     --destructive: 0 84% 60%; /* #ef4444 - Modern red */
     --destructive-foreground: 0 0% 100%; /* White text on red */
 
-    --border: 215 16% 90%; /* #e5e7eb - Light gray borders */
+    --border: 215 16% 85%; /* #d1d5db - More visible gray borders */
     --input: 218 11% 95%; /* #f1f5f9 - Very light blue-gray */
     --ring: 214 95% 61%; /* #3b82f6 - Modern blue for focus */
 
@@ -118,7 +118,7 @@
 @layer components {
   .card {
     background-color: #ffffff; /* Pure white */
-    border: 1px solid #e5e7eb; /* Light gray border */
+    border: 1.5px solid #d1d5db; /* More visible border */
     border-radius: 8px; /* Slightly more rounded */
     padding: 20px; /* More generous padding */
     width: 100%;
@@ -131,7 +131,7 @@
   .card:hover {
     transform: translateY(-2px); /* Subtle lift instead of scale */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06); /* Enhanced shadow on hover */
-    border-color: #d1d5db; /* Slightly darker border on hover */
+    border-color: #9ca3af; /* Darker border on hover */
   }
 
   .card-title {
@@ -150,7 +150,7 @@
   /* Button styles */
   .button {
     background-color: #ffffff; /* White background */
-    border: 1px solid #d1d5db; /* Light gray border */
+    border: 1.5px solid #d1d5db; /* More visible border */
     padding: 10px 16px; /* More generous padding */
     border-radius: 6px;
     cursor: pointer;
@@ -161,7 +161,7 @@
 
   .button:hover {
     background-color: #f9fafb; /* Very light gray on hover */
-    border-color: #9ca3af; /* Slightly darker border */
+    border-color: #9ca3af; /* Darker border on hover */
     transform: translateY(-1px); /* Subtle lift */
   }
 
@@ -172,7 +172,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #e5e7eb; /* Light gray border */
+    border-bottom: 1.5px solid #d1d5db; /* More visible border */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06); /* Subtle shadow */
   }
 
