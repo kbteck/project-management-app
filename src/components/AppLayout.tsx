@@ -32,7 +32,7 @@ const AppLayout: React.FC = () => {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-center mb-2">Agile Project Management Tools</h1>
           <p className="text-muted-foreground text-center">
-            Professional toolkit for agile teams and project managers - Free your workflow
+            Professional toolkit for agile teams and project managers
           </p>
         </div>
         
